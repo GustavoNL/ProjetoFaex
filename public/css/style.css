@@ -1,0 +1,30 @@
+.container-login{
+    background-color:rgba(216,216,216,216);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-login form{
+    background-color: #fff;
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 1px #0000008e;
+    text-align: center;
+
+}
+
+.container-action{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.container-logo{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    height: 150px;
+}

@@ -1,0 +1,16 @@
+{
+    "name": "gustavo/scheduler",
+    "autoload": {
+        "psr-4": {
+            "gustavo\\Scheduler\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gustavo"
+        }
+    ],
+    "require": {
+        "coffeecode/router": "^1.0"
+    }
+}
