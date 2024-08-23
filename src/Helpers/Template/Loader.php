@@ -1,5 +1,5 @@
 <?php
-namespace gustavo\Scheduler\Helpers\Template;
+namespace Gustavo\Students\Helpers\Template;
 
 class Loader
 {
@@ -12,14 +12,14 @@ class Loader
             ${$key} = $value;
         }
 
-        // if ($default) {
-        //     require_once(realpath(dirname(__FILE__) . "/../../views/partias/header.php"));    
-        // }
+         if ($default) {
+            require_once(realpath(dirname(__FILE__) . "/../../views/partias/header.php"));    
+         }
 
         require_once(realpath(dirname(__FILE__) . "/../../views/$template.php"));    
     
-        // if ($default) {
-        //     require_once(realpath(dirname(__FILE__) . "/../../views/partias/footer.php"));    
-        // }
+         if ($default) {
+             require_once(realpath(dirname(__FILE__) . "/../../views/partias/footer.php"));    
+         }
     }
 }

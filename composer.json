@@ -1,8 +1,8 @@
 {
-    "name": "gustavo/scheduler",
+    "name": "gustavo/students",
     "autoload": {
         "psr-4": {
-            "gustavo\\Scheduler\\": "src/"
+            "Gustavo\\Students\\": "src/"
         }
     },
     "authors": [

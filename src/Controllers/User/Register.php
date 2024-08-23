@@ -1,8 +1,8 @@
 <?php
 
-namespace gustavo\Scheduler\Controllers\User;
+namespace Gustavo\Students\Controllers\User;
 
-use gustavo\Scheduler\Helpers\Template\Loader;
+use Gustavo\Students\Helpers\Template\Loader;
 
 class Register
 {

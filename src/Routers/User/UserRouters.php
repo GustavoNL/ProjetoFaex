@@ -1,10 +1,10 @@
 <?php
 
-namespace gustavo\Scheduler\Routers\User;
+namespace Gustavo\Students\Routers\User;
 
 use CoffeeCode\Router\Router;
-use gustavo\Scheduler\Controllers\User\Login;
-use gustavo\Scheduler\Controllers\User\Register;
+use Gustavo\Students\Controllers\User\Login;
+use Gustavo\Students\Controllers\User\Register;
 
 class UserRouters
 {

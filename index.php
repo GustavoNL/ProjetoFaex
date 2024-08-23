@@ -2,7 +2,7 @@
 
 require_once './vendor/autoload.php';
 
-use gustavo\Scheduler\Routers\Loader;
+use Gustavo\Students\Routers\Loader;
 
 $loader = new Loader();
 $loader->execute();

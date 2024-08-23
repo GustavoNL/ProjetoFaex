@@ -1,9 +1,10 @@
 <?php
 
-namespace gustavo\Scheduler\Routers;
+namespace Gustavo\Students\Routers;
 
 use CoffeeCode\Router\Router;
-use gustavo\Scheduler\Routers\User\UserRouters;
+use Gustavo\Students\Routers\Panel\Students\StudentsRouters;
+use Gustavo\Students\Routers\User\UserRouters;
 
 class Loader
 {
@@ -11,14 +12,18 @@ class Loader
 
     private UserRouters $userRouter;
 
+    private StudentsRouters $StudentsRouters;
+
     public function __construct() {
         $this->router = new Router("http://localhost");
         $this->userRouter = new UserRouters($this->router);
+        $this->StudentsRouters = new StudentsRouters($this->router);
     }
 
     public function execute() 
     {
         $this->userRouter->execute();  
+        $this->StudentsRouters->execute();
         $this->router->dispatch();
         
         if ($this->router->error()) {
