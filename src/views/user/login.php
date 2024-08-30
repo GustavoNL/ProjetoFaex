@@ -28,7 +28,7 @@
             <button type="button" class="btn btn-primary">Login</button>
             <div class="container-action">
                 <span>Não conta?</span>
-                <a href="/Nova%20pasta/register">Clique aqui</a>
+                <a href="/PFaex/register">Clique aqui</a>
             </div>
         </form>
     </div>
