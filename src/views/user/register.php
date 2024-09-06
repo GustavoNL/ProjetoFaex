@@ -19,19 +19,19 @@
             </div>
             <div class="mb-3">
                 <label for="name" class="form-label">name</label>
-                <input name="name" type="name" class="form-control" id="name">
+                <input name="name" type="name" class="form-control" id="name" required>
             </div>
             <div class="mb-3">
                 <label for="phone" class="form-label">Telefone</label>
-                <input name="phone" type="name" class="form-control" id="fone">
+                <input name="phone" type="name" class="form-control" id="fone" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
-                <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com">
+                <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com" required>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input name="password" type="password" class="form-control" id="password">
+                <input name="password" type="password" class="form-control" id="password" required>
             </div>
             <button type="submit" class="btn btn-primary">Cadastrar</button>
             <div class="container-action">

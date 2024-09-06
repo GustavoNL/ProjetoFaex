@@ -3,39 +3,74 @@ namespace Gustavo\Students\Models;
 
 use Gustavo\Students\Helpers\Database\Database;
 
-abstract class AbstractModel{
+abstract class AbstractModel
+{
 
     public $table;
-    
+
     protected Database $database;
 
     protected $connect;
 
-    public function __construct(){
-        
+    public function __construct()
+    {
+
         $this->database = new Database();
         $this->connect = $this->database->execute();
-    }
-
-    public function create($data){
-        //"INSERT INTO users (name, surname, sex) VALUES (:name, :surname, :sex)";
-
-        echo"metodo para criação de um dado show!!";
-    }
-
-    public function findOne(){
 
     }
 
-    public function findAll(){
+    public function create($data)
+    {
+
+        try {
+
+            $column = "";
+            $values = "";
+
+            foreach ($data as $key => $value) {
+                $column .= "$key,";
+                $values .= ":$key,";
+            }
+
+            $column = rtrim($column, ",");
+            $values = rtrim($values, ",");
+
+            $table = $this->table;
+
+            $sql = "INSERT INTO $table ($column) VALUES ($values)";
+
+            $stmt = $this->connect->prepare($sql);
+            if ($stmt->execute($data)) {
+
+                return $this->connect->lastInsertId();
+
+            }
+
+            return false;
+
+        } catch (\Exception $e) {
+            return false;
+        }
+
+    }
+    public function findOne()
+    {
 
     }
 
-    public function update(){
+    public function findAll()
+    {
 
     }
 
-    public function delete(){
+    public function update()
+    {
+
+    }
+
+    public function delete()
+    {
 
     }
 }

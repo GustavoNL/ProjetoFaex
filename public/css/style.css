@@ -1,11 +1,6 @@
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    background-color:#cafcf9;
-}
-
 .container-login{
-    flex-grow: 1;
+    background-color:#cafcf9;
+
     display: flex;
     height: 100vh;
     justify-content: center;
