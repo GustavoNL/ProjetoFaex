@@ -14,6 +14,6 @@ class Register
 
     public function execute()
     {
-        $this->template->render("user/register");
+        $this->template->render("user/register", false);
     }
 }

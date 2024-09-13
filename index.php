@@ -2,6 +2,8 @@
 
 require_once './vendor/autoload.php';
 
+session_start();
+
 use Gustavo\Students\Routers\Loader;
 use Gustavo\Students\Models\Users\Users;
 
