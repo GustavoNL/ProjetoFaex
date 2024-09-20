@@ -22,19 +22,19 @@
 
 <body>
     <div class="container-login">
-        <form action="post">
+        <form action="/PFaex/login/validate" method="post">
             <div class="container-logo">
                 <img src="public/img/images.png" alt="">
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com" required>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" required>
+                <input name="password" type="password" class="form-control" id="password" required>
             </div>
-            <button type="button" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary">Login</button>
             <div class="container-action">
                 <span>Não conta?</span>
                 <a href="/PFaex/register">Clique aqui</a>

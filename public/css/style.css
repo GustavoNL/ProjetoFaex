@@ -36,21 +36,18 @@
 }
 
 .danger-message {
-    padding: 10px;
-    margin-top: 20px;
-    background-color: red;
+    background-color: rgba(253, 58, 58, 0.778);
     color: #fff;
-    border-radius: 10%;
-    box-shadow: 0px 0px 31px -1px rgba(0, 0, 0, 0.48);
-    text-align: center;
 }
 
 .success-message {
-    padding: 10px;
-    margin-top: 20px;
-    background-color: green;
+    background-color: rgba(2, 196, 2, 0.762);
     color: #fff;
-    border-radius: 10%;
+}
+
+.content-message{
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
     box-shadow: 0px 0px 31px -1px rgba(0, 0, 0, 0.48);
-    text-align: center;
 }

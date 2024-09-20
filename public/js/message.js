@@ -1,7 +1,7 @@
-const message = document.querySelector(".container-message");
+// const message = document.querySelector(".container-message");
 
-setTimeout(() => {
+// setTimeout(() => {
 
-    message.remove();
+//     message.remove();
 
-}, 5000) 
+// }, 5000) 

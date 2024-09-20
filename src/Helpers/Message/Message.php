@@ -1,10 +1,10 @@
 <?php
 namespace Gustavo\Students\Helpers\Message;
 
-class Messages
+class Message
 {
 
-    public function setMessageSuccess($message)
+    public function setmessageuccess($message)
     {
 
         $_SESSION["message"][] = [

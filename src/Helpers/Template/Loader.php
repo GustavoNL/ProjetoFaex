@@ -1,15 +1,15 @@
 <?php
 namespace Gustavo\Students\Helpers\Template;
-use Gustavo\Students\Helpers\Message\Messages;
+use Gustavo\Students\Helpers\Message\Message;
 
 class Loader
 {
 
-    private Messages $message;
+    private Message $message;
 
     public function __construct(){
 
-        $this->message = new Messages();
+        $this->message = new Message();
 
     }
 
@@ -18,7 +18,7 @@ class Loader
     public function render($template, $default = true, $data = [])
     {   
 
-        $_messages = $this->message->getMessage();
+        $_message = $this->message->getMessage();
 
         foreach ($data as $key => $value) {
             ${$key} = $value;
