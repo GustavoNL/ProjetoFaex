@@ -6,19 +6,25 @@ use Gustavo\Students\Models\Users\Users;
 
 use Gustavo\Students\Helpers\Message\message;
 
+use Gustavo\Students\Models\Users\UserSesssion;
+
 
 class LoginPost{
 
     protected Users $users;
 
-    protected message $message;
+    protected Message $message;
+
+    protected UserSesssion $userSession;
 
     public function __construct()
     {
 
         $this->users = new Users();
 
-        $this->message = new message();
+        $this->Message = new message();
+
+        $this->userSession = new UserSesssion();
 
     }
 
@@ -52,6 +58,9 @@ class LoginPost{
             header('location: /login');
             return;
         }
+
+        $this->userSession->create($user->id, $user->name, $user->email);
+
         header('location: /PFaex/panel/students/');
 
     }

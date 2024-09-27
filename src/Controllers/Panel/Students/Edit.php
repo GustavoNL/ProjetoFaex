@@ -4,10 +4,10 @@ namespace Gustavo\Students\Controllers\Panel\Students;
 
 use Gustavo\Students\Helpers\Template\Loader;
 
-class Students
+class Edit
 {
     private Loader $template;
-    
+
     public function __construct() {
 
         $this->template = new Loader();
@@ -15,7 +15,6 @@ class Students
 
     public function execute(){
 
-        echo "Teste";
-        
+        echo "Tela de edição";
     }
 }

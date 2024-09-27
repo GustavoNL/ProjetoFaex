@@ -4,22 +4,29 @@ namespace Gustavo\Students\Routers\Panel\Students;
 
 use CoffeeCode\Router\Router;
 
-class StudentsRouters{
+use Gustavo\Students\Models\Users\UserSesssion;
+
+class StudentsRouters
+{
 
     private Router $router;
 
-    public function __construct(Router $router){
+    public function __construct(Router $router)
+    {
 
         $this->router = $router;
     }
     
-    public function execute(){
+    public function execute()
+    {
 
         $this->router->namespace('Gustavo\Students\Controllers\Panel\Students');
 
-        $this->router->get("/panel/students/", "Students:execute");
+        $this->router->get("/panel/students/", 'Students:execute', middleware: UserSesssion::class);
 
-        $this->router->get("/panel/students/create", "Create:execute");
+        $this->router->get("/panel/students/create", "Create:execute", middleware: UserSesssion::class);
+
+        $this->router->get("/panel/students/edit", "Edit:execute", middleware: UserSesssion::class);
     }
 }
 
