@@ -15,6 +15,6 @@ class Edit
 
     public function execute(){
 
-        echo "Tela de edição";
+        $this->template->render('panel/studentsEdit', true);
     }
 }

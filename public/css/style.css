@@ -45,9 +45,181 @@
     color: #fff;
 }
 
-.content-message{
+.content-message {
     margin: 15px;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 0px 31px -1px rgba(0, 0, 0, 0.48);
+}
+
+.container-criar {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    margin: 0;
+}
+
+.container-criar form {
+    background-color: #fff;
+    width: 37.5%;
+    padding: 20px;
+    border-radius: 1.5%;
+    box-shadow: 0px 0px 31px -1px rgba(0, 0, 0, 0.48);
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os campos */
+}
+
+.flex-container {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os campos de nome e telefone */
+}
+
+.md-3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-criar .md-3 input {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.flex-container .md-3 input {
+    width: 250px; /* Largura dos campos de nome e telefone */
+}
+
+.container-criar .md-3 input[type="email"] {
+    width: 510px; /* Largura maior para o campo de email */
+}
+
+.container-criar .md-3 input[type="password"] {
+    width: 300px; /* Ajuste de largura para o campo de senha */
+}
+
+.button-container {
+    display: flex;
+}
+
+.flex-button{
+    display: flex;
+    gap: 10px;
+}
+.container-criar .btn-register {
+    margin-top: 5px;
+    padding: 10px 50px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-criar .btn-back {
+    margin-top: 5px;
+    padding: 10px 50px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container-list {
+    display: flex;
+    flex-direction: column; /* Organiza em coluna */
+    align-items: center; /* Centraliza a tabela horizontalmente */
+    height: 100vh; /* Altura total da viewport */
+    padding-top: 20px; /* Espaço reduzido na parte superior */
+}
+
+.search-container {
+    display: flex; /* Organiza os elementos em linha */
+    gap: 10px; /* Espaçamento entre os elementos */
+    margin-bottom: 20px; /* Espaçamento abaixo da barra de pesquisa */
+}
+
+.search-input {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 300px; /* Largura da barra de pesquisa */
+}
+
+.btn-add {
+    background-color: #4CAF50; /* Cor do botão Adicionar */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+table {
+    width: 80%; /* Largura da tabela */
+    border-collapse: separate; /* Permite bordas arredondadas */
+    border-radius: 10px; /* Bordas arredondadas na tabela */
+    overflow: hidden; /* Esconde as bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}
+
+th, td {
+    border: 2px solid black; /* Borda das células */
+    padding: 10px; /* Espaçamento interno das células */
+    text-align: left; /* Alinhamento do texto */
+}
+
+th {
+    background-color: #f2f2f2; /* Cor de fundo do cabeçalho */
+}
+
+/* Bordas arredondadas para as células do cabeçalho */
+th:first-child {
+    border-top-left-radius: 10px; /* Canto superior esquerdo */
+}
+
+th:last-child {
+    border-top-right-radius: 10px; /* Canto superior direito */
+}
+
+/* Bordas arredondadas para as células da última linha */
+tr:last-child td:first-child {
+    border-bottom-left-radius: 10px; /* Canto inferior esquerdo */
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px; /* Canto inferior direito */
+}
+
+/* Estilo dos botões */
+.btn-edit, .btn-delete {
+    width: 100px; /* Largura dos botões aumentada para simetria */
+    padding: 5px; /* Ajuste de padding */
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-color: yellow; /* Cor do botão Editar */
+}
+
+.btn-delete {
+    background-color: red; /* Cor do botão Deletar */
+}
+
+.btn-edit:hover {
+    background-color: #ffd700; /* Cor do botão Editar ao passar o mouse */
+}
+
+.btn-delete:hover {
+    background-color: #ff4500; /* Cor do botão Deletar ao passar o mouse */
+}
+
+td:last-child {
+    width: 250px; /* Largura fixa para a coluna de ações, ajustada para ser mais estreita */
 }

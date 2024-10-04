@@ -15,7 +15,7 @@ class Students
 
     public function execute(){
 
-        echo "Teste";
+        $this->template->render('panel/students', true);
         
     }
 }

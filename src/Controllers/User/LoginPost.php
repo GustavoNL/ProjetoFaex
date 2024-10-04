@@ -49,7 +49,7 @@ class LoginPost{
         ]);
         if(!$user) {
             $this->message->setMessageError("Usuário não encontrado");
-            header('location: /PFaex//login');
+            header('location: /PFaex/login');
             return;
         }
         

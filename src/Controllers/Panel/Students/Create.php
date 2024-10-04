@@ -15,6 +15,7 @@ class Create
 
     public function execute(){
 
-        echo "Tela de Criação";
+        $this->template->render('panel/studentsCreate', true);
+
     }
 }
