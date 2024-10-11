@@ -4,18 +4,24 @@ namespace Gustavo\Students\Controllers\Panel\Students;
 
 use Gustavo\Students\Helpers\Template\Loader;
 
-class Students
+use Gustavo\Students\Models\Users\UserSesssion;
+
+class Logout
 {
     private Loader $template;
-    
+
+    private UserSesssion $userSesssion;
+
     public function __construct() {
 
         $this->template = new Loader();
+        $this->userSesssion = new UserSesssion();
     }
 
     public function execute(){
 
-        $this->template->render('/panel/students', true);
-        
+        $this->userSesssion->destroy();
+        header('location: /PFaex/login'); 
+
     }
 }

@@ -11,19 +11,30 @@
             </div>
         </div>
         <div class="md-3">
-            <label for="email" class="form-label">Email address</label>
+            <label for="email" class="form-label">Email</label>
             <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com" required>
         </div>
-        <div class="md-3">
-            <label for="password" class="form-label">Password</label>
-            <input name="password" type="password" class="form-control" id="password" required>
+        <div class="flex-container">
+            <div class="md-3">
+                <label for="regist" class="form-label">Matricula</label>
+                <input name="regist" type="text" class="form-control" id="regist" required>
+            </div>
+            <div class="md-3">
+                <label for="year" class="form-label">Ano</label>
+                <input name="year" type="text" class="form-control" id="year" required>
+            </div>
         </div>
+        <div class="md-3">
+            <label for="course" class="form-label">Curso</label>
+            <input name="course" type="text" class="form-control" id="course" required>
+        </div>
+
         <div class="flex-button">
             <div class="button-container">
                 <button type="submit" class="btn-back">Voltar</button>
             </div>
             <div class="button-container">
-                <button type="submit" class="btn-register">Editar</button>
+                <button type="submit" class="btn-register">Cadastrar</button>
             </div>
         </div>
     </form>

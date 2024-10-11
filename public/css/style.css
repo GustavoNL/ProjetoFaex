@@ -1,3 +1,11 @@
+.container-header{
+    background-color: #b9e2df;
+}
+
+.container-footer{
+    background-color: #b9e2df;
+}
+
 .container-login {
     background-color: #cafcf9;
     display: flex;
@@ -53,12 +61,13 @@
 }
 
 .container-criar {
+    background-color: #cafcf9;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 85vh;
+    height: 88.5vh;
     margin: 0;
 }
 
@@ -130,11 +139,16 @@
 }
 
 .container-list {
+    background-color: #cafcf9;
     display: flex;
     flex-direction: column; /* Organiza em coluna */
     align-items: center; /* Centraliza a tabela horizontalmente */
     height: 100vh; /* Altura total da viewport */
     padding-top: 20px; /* Espaço reduzido na parte superior */
+}
+
+.container-list tbody{
+    background-color: #ffffff;
 }
 
 .search-container {

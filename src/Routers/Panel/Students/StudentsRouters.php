@@ -22,11 +22,13 @@ class StudentsRouters
 
         $this->router->namespace('Gustavo\Students\Controllers\Panel\Students');
 
-        $this->router->get("/panel/students/", 'Students:execute' );
+        $this->router->get("/panel/students/", 'Students:execute', middleware: UserSesssion::class);
 
-        $this->router->get("/panel/students/create", "Create:execute");
+        $this->router->get("/panel/students/create", "Create:execute", middleware: UserSesssion::class);
 
-        $this->router->get("/panel/students/edit", "Edit:execute");
+        $this->router->get("/panel/students/edit", "Edit:execute", middleware: UserSesssion::class);
+
+        $this->router->get("/panel/students/logout", "Logout:execute", middleware: UserSesssion::class);
     }
 }
 

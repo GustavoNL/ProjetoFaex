@@ -1,7 +1,8 @@
 <div class="container-list">
     <div class="search-container">
         <input type="text" class="search-input" placeholder="Pesquisar...">
-        <button class="btn-add">Adicionar</button>
+        <a href="/PFaex/panel/students/create"><button class="btn-add">Adicionar</button></a>
+        
     </div>
     <table>
         <thead>
@@ -14,12 +15,12 @@
         </thead>
         <tbody>
             <tr>
-                <td>João Silva</td>
-                <td>joao.silva@example.com</td>
-                <td>(11) 91234-5678</td>
+                <td><?= $_SESSION["user"]['name']?></td>
+                <td><?= $_SESSION["user"]['email']?></td>
+                <td><?= $_SESSION["user"]['phone']?></td>
                 <td>
-                    <button class="btn-edit">Editar</button>
-                    <button class="btn-delete">Deletar</button>
+                    <a href="/PFaex/panel/students/edit"><button class="btn-edit">Editar</button></a>
+                    <a href="#"><button class="btn-delete">Deletar</button></a>
                 </td>
             </tr>
             <tr>
@@ -27,8 +28,8 @@
                 <td>maria.oliveira@example.com</td>
                 <td>(21) 98765-4321</td>
                 <td>
-                    <button class="btn-edit">Editar</button>
-                    <button class="btn-delete">Deletar</button>
+                    <a href="/PFaex/panel/students/edit"><button class="btn-edit">Editar</button></a>
+                    <a href="#"><button class="btn-delete">Deletar</button></a>
                 </td>
             </tr>
             <!-- Adicione mais linhas conforme necessário -->
