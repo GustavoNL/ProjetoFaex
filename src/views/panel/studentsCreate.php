@@ -1,5 +1,5 @@
 <div class="container-criar">
-    <form action="">
+    <form method="post" action="/PFaex/panel/students/create/save">
         <div class="flex-container">
             <div class="md-3">
                 <label for="name" class="form-label">Name</label>
@@ -16,8 +16,8 @@
         </div>
         <div class="flex-container">
             <div class="md-3">
-                <label for="regist" class="form-label">Matricula</label>
-                <input name="regist" type="text" class="form-control" id="regist" required>
+                <label for="register" class="form-label">Matricula</label>
+                <input name="register" type="text" class="form-control" id="regist" required>
             </div>
             <div class="md-3">
                 <label for="year" class="form-label">Ano</label>

@@ -56,8 +56,7 @@ class LoginPost{
             header('location: /PFaex/login');
             return;
         }
-
-        if(!password_verify($data['password'], $user->password)) {
+        if(!password_verify($data['password'], $user['password'])) {
             $this->message->setMessageError("Usuario ou senha invalidos");
             header('location: /PFaex/login');
             return;

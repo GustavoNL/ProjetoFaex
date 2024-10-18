@@ -75,14 +75,14 @@ abstract class AbstractModel
 
             $stmt->execute($condition);
 
-            return $stmt->fetchObject();
+            return $stmt->fetchAll(\PDO::FETCH_ASSOC)[0];
     }
 
-    public function findAll($condition = "1" , $column = "*")
+    public function findAll($condition = [], $column = "*")
     {
         $where = "";
 
-        if ($condition != "1") {
+        if (count ($condition) > 0) {
 
             foreach ($condition as $key => $value) {
 
@@ -114,7 +114,7 @@ abstract class AbstractModel
         
         }
         
-        return $stmt->fetchAll();
+        return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
 
     public function update()

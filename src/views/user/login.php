@@ -27,7 +27,7 @@
                 <img src="public/img/images.png" alt="">
             </div>
             <div class="mb-3">
-                <label for="email" class="form-label">Emaik</label>
+                <label for="email" class="form-label">Email</label>
                 <input name="email" type="email" class="form-control" id="email" placeholder="name@example.com" required>
             </div>
             <div class="mb-3">

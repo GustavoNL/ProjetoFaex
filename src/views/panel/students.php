@@ -9,30 +9,24 @@
             <tr>
                 <th>Nome</th>
                 <th>Email</th>
-                <th>Telefone</th>
-                <th>Ações</th> <!-- Nova coluna para ações -->
+                <th>Curso</th>
+                <th>Ano</th>
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
+            <?php foreach ($student as $key => $students): ?>
             <tr>
-                <td><?= $_SESSION["user"]['name']?></td>
-                <td><?= $_SESSION["user"]['email']?></td>
-                <td><?= $_SESSION["user"]['phone']?></td>
+                <td><?= $students['name'] ?></td>
+                <td><?= $students['email'] ?></td>
+                <td><?= $students['course'] ?></td>
+                <td><?= $students['year'] ?></td>
                 <td>
                     <a href="/PFaex/panel/students/edit"><button class="btn-edit">Editar</button></a>
                     <a href="#"><button class="btn-delete">Deletar</button></a>
                 </td>
             </tr>
-            <tr>
-                <td>Maria Oliveira</td>
-                <td>maria.oliveira@example.com</td>
-                <td>(21) 98765-4321</td>
-                <td>
-                    <a href="/PFaex/panel/students/edit"><button class="btn-edit">Editar</button></a>
-                    <a href="#"><button class="btn-delete">Deletar</button></a>
-                </td>
-            </tr>
-            <!-- Adicione mais linhas conforme necessário -->
+            <?php endforeach;?>
         </tbody>
     </table>
 </div>

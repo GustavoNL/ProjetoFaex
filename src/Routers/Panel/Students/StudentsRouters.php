@@ -26,6 +26,8 @@ class StudentsRouters
 
         $this->router->get("/panel/students/create", "Create:execute", middleware: UserSesssion::class);
 
+        $this->router->post("/panel/students/create/save", "CreatePost:execute", middleware: UserSesssion::class);
+
         $this->router->get("/panel/students/edit", "Edit:execute", middleware: UserSesssion::class);
 
         $this->router->get("/panel/students/logout", "Logout:execute", middleware: UserSesssion::class);
