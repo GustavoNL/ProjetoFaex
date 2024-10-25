@@ -4,17 +4,29 @@ namespace Gustavo\Students\Controllers\Panel\Students;
 
 use Gustavo\Students\Helpers\Template\Loader;
 
+use Gustavo\Students\Models\Students\Student;
+
 class Edit
 {
-    private Loader $template;
+    protected Loader $template;
+
+    protected Student $student;
 
     public function __construct() {
 
         $this->template = new Loader();
+
+        $this->student = new Student();
     }
 
-    public function execute(){
+    public function execute($data){
 
-        $this->template->render('panel/studentsEdit', true);
+
+         $student = $this->student->findOne([
+            'id' => $data['id']
+        ]);
+        $this->template->render('panel/studentsEdit', true, [
+            'student' => $student
+        ]);
     }
 }

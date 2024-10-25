@@ -62,7 +62,7 @@ class LoginPost{
             return;
         }
         
-        $this->userSession->create($user->id, $user->name, $user->email, $user->phone);
+        $this->userSession->create($user['id'], $user['name'], $user['email'], $user['phone']);
 
         header('location: /PFaex/panel/students/');
 

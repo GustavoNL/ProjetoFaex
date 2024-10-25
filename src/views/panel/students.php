@@ -22,8 +22,10 @@
                 <td><?= $students['course'] ?></td>
                 <td><?= $students['year'] ?></td>
                 <td>
-                    <a href="/PFaex/panel/students/edit"><button class="btn-edit">Editar</button></a>
-                    <a href="#"><button class="btn-delete">Deletar</button></a>
+                    <a href="/PFaex/panel/students/edit/<?= $students['id'] ?>"><button class="btn-edit">Editar</button></a>
+                    <form action="/PFaex/panel/students/delete/<?= $students['id'] ?>" method="post">
+                        <button type="submit" class="btn-delete">Deletar</button>
+                    </form>
                 </td>
             </tr>
             <?php endforeach;?>
