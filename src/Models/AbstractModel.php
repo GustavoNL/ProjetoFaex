@@ -117,8 +117,40 @@ abstract class AbstractModel
         return $stmt->fetchAll(\PDO::FETCH_ASSOC);
     }
 
-    public function update()
+    public function update($data, $id)
     {
+
+        try {
+
+            $set = "";
+
+            foreach ($data as $key => $value) {
+                $set .= "$key = :$key,";
+            }
+
+            $set = rtrim($set, ",");
+
+            $table = $this->table;
+
+            $sql = "UPDATE $table SET $set WHERE id = :id";
+
+            $stmt = $this->connect->prepare($sql);
+
+            $data["id"] = $id;
+
+            if ($stmt->execute($data)) {
+
+                return true;
+
+            }
+
+            return false;
+
+
+        } catch (\Exception $e) {
+
+            return false;
+        }
 
     }
 

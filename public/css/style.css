@@ -209,15 +209,18 @@ tr:last-child td:last-child {
     border-bottom-right-radius: 10px; /* Canto inferior direito */
 }
 
-/* Estilo dos botões */
+.button-group {
+    display: flex; /* Alinha os botões em linha */
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
 .btn-edit, .btn-delete {
-    width: 100px; /* Largura dos botões aumentada para simetria */
+    width: 100px; /* Largura dos botões */
     padding: 5px; /* Ajuste de padding */
     border-radius: 5px;
     border: none;
     cursor: pointer;
 }
-
 .btn-edit {
     background-color: yellow; /* Cor do botão Editar */
 }

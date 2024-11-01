@@ -1,5 +1,5 @@
 <div class="container-criar">
-    <form action="">
+    <form method="post" action="/PFaex/panel/students/edit/<?= $student['id'] ?>">
         <div class="flex-container">
             <div class="md-3">
                 <label for="name" class="form-label">Name</label>
@@ -16,8 +16,8 @@
         </div>
         <div class="flex-container">
             <div class="md-3">
-                <label for="regist" class="form-label">Matricula</label>
-                <input value="<?= $student['register'] ?>" name="regist" type="text" class="form-control" id="regist" required>
+                <label for="register" class="form-label">Matricula</label>
+                <input value="<?= $student['register'] ?>" name="register" type="text" class="form-control" id="regist" required>
             </div>
             <div class="md-3">
                 <label for="year" class="form-label">Ano</label>
@@ -34,7 +34,7 @@
                 <a href="/PFaex/panel/students"><button type="submit" class="btn-back">Voltar</button></a>
             </div>
             <div class="button-container">
-                <button type="submit" class="btn-register">Cadastrar</button>
+                <button type="submit" class="btn-register">Alterar</button>
             </div>
         </div>
     </form>
