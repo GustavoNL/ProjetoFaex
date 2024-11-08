@@ -19,11 +19,26 @@ class Students
 
     public function execute(){
 
-        $student = $this->student->findAll();
+        $search = "";
 
+        if (isset($_GET['nameFilter'])){
+
+            $search = $_GET['nameFilter'];
+            
+            $student = $this->student->findAll([
+                "name" => $_GET['nameFilter']
+            ]);
+            
+        } else{
+
+            
+            $student = $this->student->findAll();
+
+        }
 
         $this->template->render('/panel/students', true, [
-            "student" => $student
+            "student" => $student,
+            "search" => $search
          ]);
         
     }

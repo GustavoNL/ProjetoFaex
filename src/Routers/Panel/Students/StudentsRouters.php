@@ -24,6 +24,8 @@ class StudentsRouters
 
         $this->router->get("/panel/students/", 'Students:execute', middleware: UserSesssion::class);
 
+        $this->router->get("/panel/students/search", 'Students:execute', middleware: UserSesssion::class);
+
         $this->router->get("/api/students/", 'ApiStudents:execute',);
 
         $this->router->get("/panel/students/create", "Create:execute", middleware: UserSesssion::class);

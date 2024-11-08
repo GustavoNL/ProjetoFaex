@@ -34,6 +34,7 @@
                     <a class="nav-item nav-link" href="/PFaex/panel/students/edit">Editar</a>
                     <a class="nav-item nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" tabindex="-1" aria-disabled="true">Disabled</a>
                 </div>
+                
             </div>
             <a href="/PFaex/panel/students/logout"><button type="button" class="btn btn-outline-dark" >Sair</button></a>
         </nav>
