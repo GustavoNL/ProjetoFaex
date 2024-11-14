@@ -21,7 +21,9 @@ class ApiStudents
 
         $student = $this->student->findAll();
 
-        echo json_encode($student);
+        echo json_encode([
+            "total_student" => count( $student)
+        ]);
         
     }
 }
