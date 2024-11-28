@@ -1,13 +1,13 @@
 <div class="container-list">
     <div class="search-container">
         <form action="/PFaex/panel/students/search" method="GET">
-        <input value="<?= $search ?>" type="text" name="nameFilter">
-        <button class="btn-add">Pesquisar</button>
+            <input class="search-input" type="text" name="nameFilter" value="<?= $search ?>" placeholder="Pesquisar">
+            <button class="btn-search">Pesquisar</button>
         </form>
-        <?php if ($search != "") { ?>
-            <a href="/PFaex/panel/students"><button class="btn-delete">Limpar</button></a>
-        <?php } ?>
         <a href="/PFaex/panel/students/create"><button class="btn-add">Adicionar</button></a>
+        <?php if ($search != "") { ?>
+            <a href="/PFaex/panel/students"><button class="btn-clear">Limpar</button></a>
+        <?php } ?>
     </div>
     <table>
         <thead>

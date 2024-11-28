@@ -1,13 +1,13 @@
 .container-header{
-    background-color: #b9e2df;
+    background-color: #37517e;
 }
 
 .container-footer{
-    background-color: #b9e2df;
+    background-color: #37517e;
 }
 
 .container-login {
-    background-color: #cafcf9;
+    background-color: #37517e;
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -61,7 +61,7 @@
 }
 
 .container-criar {
-    background-color: #cafcf9;
+    background-color: #61769a;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -139,104 +139,109 @@
 }
 
 .container-list {
-    background-color: #cafcf9;
+    background-color: #ffffff; /* Cor de fundo branco */
     display: flex;
-    flex-direction: column; /* Organiza em coluna */
-    align-items: center; /* Centraliza a tabela horizontalmente */
+    flex-direction: column;
+    align-items: center;
     height: 100vh; /* Altura total da viewport */
-    padding-top: 20px; /* Espaço reduzido na parte superior */
-}
-
-.container-list tbody{
-    background-color: #ffffff;
+    padding: 20px;
 }
 
 .search-container {
-    display: flex; /* Organiza os elementos em linha */
-    gap: 10px; /* Espaçamento entre os elementos */
-    margin-bottom: 20px; /* Espaçamento abaixo da barra de pesquisa */
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .search-input {
     padding: 10px;
-    border: 2px solid black;
+    border: 1px solid #ced4da;
     border-radius: 5px;
-    width: 300px; /* Largura da barra de pesquisa */
+    width: 300px;
 }
 
-.btn-add {
-    background-color: #4CAF50; /* Cor do botão Adicionar */
+.btn-search, .btn-add, .btn-clear {
+    background-color: #007bff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    cursor: pointer;
     color: white;
+    cursor: pointer;
+}
+
+.btn-add {
+    background-color: #28a745;
+}
+
+.btn-clear {
+    background-color: #dc3545;
+}
+
+.btn-search:hover {
+    background-color: #0056b3;
+}
+
+.btn-add:hover {
+    background-color: #218838;
+}
+
+.btn-clear:hover {
+    background-color: #c82333;
 }
 
 table {
-    width: 80%; /* Largura da tabela */
-    border-collapse: separate; /* Permite bordas arredondadas */
-    border-radius: 10px; /* Bordas arredondadas na tabela */
-    overflow: hidden; /* Esconde as bordas arredondadas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    width: 80%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 th, td {
-    border: 2px solid black; /* Borda das células */
-    padding: 10px; /* Espaçamento interno das células */
-    text-align: left; /* Alinhamento do texto */
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: left;
 }
 
 th {
-    background-color: #f2f2f2; /* Cor de fundo do cabeçalho */
-}
-
-/* Bordas arredondadas para as células do cabeçalho */
-th:first-child {
-    border-top-left-radius: 10px; /* Canto superior esquerdo */
-}
-
-th:last-child {
-    border-top-right-radius: 10px; /* Canto superior direito */
-}
-
-/* Bordas arredondadas para as células da última linha */
-tr:last-child td:first-child {
-    border-bottom-left-radius: 10px; /* Canto inferior esquerdo */
-}
-
-tr:last-child td:last-child {
-    border-bottom-right-radius: 10px; /* Canto inferior direito */
+    background-color: #e9ecef;
+    font-weight: bold;
 }
 
 .button-group {
-    display: flex; /* Alinha os botões em linha */
-    gap: 10px; /* Espaçamento entre os botões */
+    display: flex;
+    gap: 10px;
 }
 
 .btn-edit, .btn-delete {
-    width: 100px; /* Largura dos botões */
-    padding: 5px; /* Ajuste de padding */
-    border-radius: 5px;
+    padding: 5px 10px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
+
 .btn-edit {
-    background-color: yellow; /* Cor do botão Editar */
+    background-color: #ffc107;
 }
 
 .btn-delete {
-    background-color: red; /* Cor do botão Deletar */
+    background-color: #dc3545;
 }
 
 .btn-edit:hover {
-    background-color: #ffd700; /* Cor do botão Editar ao passar o mouse */
+    background-color: #e0a800;
 }
 
 .btn-delete:hover {
-    background-color: #ff4500; /* Cor do botão Deletar ao passar o mouse */
+    background-color: #c82333;
 }
 
 td:last-child {
-    width: 250px; /* Largura fixa para a coluna de ações, ajustada para ser mais estreita */
+    width: 150px; /* Largura ajustada para a coluna de ações */
+}
+
+td:nth-child(2) {
+    width: 300px; /* Largura aumentada para a coluna de email */
+}
+
+.container-header, .container-footer {
+    background-color: #37517e; /* Cor original */
 }

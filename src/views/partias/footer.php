@@ -1,5 +1,5 @@
 <footer class="container-footer">
-        Tentativa de desenvolvimento por Gustavo Nunes 
+        Desenvolvido por Gustavo Nunes
     </footer>
 </body>
 </html>

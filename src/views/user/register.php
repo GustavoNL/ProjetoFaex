@@ -14,9 +14,11 @@
 <body>
     <div class="container-login">
         <form action="/PFaex/register/save" method="post">
-            <div class="container-logo">
-                <img src="public/img/images.png" alt="">
-            </div>
+        <a href="/PFaex/">
+                <div class="container-logo">
+                    <img src="public/img/images.png" alt="">
+                </div>
+            </a>
             <div class="mb-3">
                 <label for="name" class="form-label">name</label>
                 <input name="name" type="name" class="form-control" id="name" required>

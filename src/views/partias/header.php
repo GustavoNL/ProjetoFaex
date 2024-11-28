@@ -22,7 +22,7 @@
 <body>
     <nav class="container-header">
         <nav class="navbar navbar-expand-lg navbar-light bg-blue">
-            <a class="navbar-brand" href="#"><?= $_SESSION["user"]['name'] ?></a>
+            <a class="navbar-brand" href="/PFaex/panel/students/"><?= $_SESSION["user"]['name'] ?></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,11 +31,9 @@
                 <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="/PFaex/panel/students">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="/PFaex/panel/students/create">Criar</a>
-                    <a class="nav-item nav-link" href="/PFaex/panel/students/edit">Editar</a>
-                    <a class="nav-item nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" tabindex="-1" aria-disabled="true">Disabled</a>
                 </div>
                 
             </div>
-            <a href="/PFaex/panel/students/logout"><button type="button" class="btn btn-outline-dark" >Sair</button></a>
+            <a href="/PFaex/panel/students/logout"><button type="button" class="btn btn-outline-light" >Sair</button></a>
         </nav>
     </nav>
